@@ -37,7 +37,6 @@ class MasterViewController: UITableViewController {
             kCICategoryTransition,
             ].sorted{ CIFilter.localizedName(forCategory: $0) < CIFilter.localizedName(forCategory: $1)}
     
-    /// Filterpedia doesn't support code generators, color cube filters, filters that require NSValue
     let exclusions = ["CIQRCodeGenerator",
                       "CIPDF417BarcodeGenerator",
                       "CICode128BarcodeGenerator",

@@ -152,7 +152,7 @@ class FilterInputItemRenderer: UITableViewCell {
         
         guard let rootController = UIApplication.shared.keyWindow!.rootViewController else { return }
         
-        let editTextController = UIAlertController(title: "Filterpedia", message: nil, preferredStyle: .alert)
+        let editTextController = UIAlertController(title: "CoreImageFilters", message: nil, preferredStyle: .alert)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (_: UIAlertAction) in
             
