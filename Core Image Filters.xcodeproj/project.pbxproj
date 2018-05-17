@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		184B3C7220AC8D830093350B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B3C7120AC8D830093350B /* AppDelegate.swift */; };
+		184B3C7420AC8D830093350B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B3C7320AC8D830093350B /* MasterViewController.swift */; };
+		184B3C7620AC8D830093350B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B3C7520AC8D830093350B /* DetailViewController.swift */; };
+		184B3C7920AC8D830093350B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B3C7720AC8D830093350B /* Main.storyboard */; };
+		184B3C7B20AC8D840093350B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 184B3C7A20AC8D840093350B /* Assets.xcassets */; };
+		184B3C7E20AC8D840093350B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 184B3C7C20AC8D840093350B /* LaunchScreen.storyboard */; };
+		184BFC0220ACD64700BA839B /* LabelledSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0120ACD64700BA839B /* LabelledSlider.swift */; };
+		184BFC0520ACD6BF00BA839B /* VectorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0420ACD6BF00BA839B /* VectorSlider.swift */; };
+		184BFC0720ACD74300BA839B /* FilterInputItemRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0620ACD74300BA839B /* FilterInputItemRenderer.swift */; };
+		184BFC0920ACD88600BA839B /* CompositeOverBlackFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0820ACD88600BA839B /* CompositeOverBlackFilter.swift */; };
+		184BFC0B20ACD8B900BA839B /* HistogramDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0A20ACD8B900BA839B /* HistogramDisplay.swift */; };
+		184BFC0D20ACD8D600BA839B /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC0C20ACD8D600BA839B /* Assets.swift */; };
+		184BFC3120ACE01400BA839B /* Voronoi.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 184BFC1320ACE01200BA839B /* Voronoi.cikernel */; };
+		184BFC3220ACE01400BA839B /* TransverseChromaticAberration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1420ACE01200BA839B /* TransverseChromaticAberration.swift */; };
+		184BFC3320ACE01400BA839B /* VoronoiNoise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1520ACE01200BA839B /* VoronoiNoise.swift */; };
+		184BFC3420ACE01400BA839B /* flame.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 184BFC1620ACE01200BA839B /* flame.cikernel */; };
+		184BFC3520ACE01400BA839B /* CMYKRegistrationMismatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1720ACE01200BA839B /* CMYKRegistrationMismatch.swift */; };
+		184BFC3620ACE01400BA839B /* EightBit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1820ACE01200BA839B /* EightBit.swift */; };
+		184BFC3720ACE01400BA839B /* FilmicEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1920ACE01200BA839B /* FilmicEffects.swift */; };
+		184BFC3820ACE01400BA839B /* MultiBandHSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1A20ACE01200BA839B /* MultiBandHSV.swift */; };
+		184BFC3920ACE01400BA839B /* Bokeh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1B20ACE01200BA839B /* Bokeh.swift */; };
+		184BFC3A20ACE01400BA839B /* cikl_sky.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 184BFC1C20ACE01200BA839B /* cikl_sky.cikernel */; };
+		184BFC3B20ACE01400BA839B /* SobelEdgeDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1D20ACE01200BA839B /* SobelEdgeDetection.swift */; };
+		184BFC3C20ACE01400BA839B /* KuwaharaFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1E20ACE01200BA839B /* KuwaharaFilter.swift */; };
+		184BFC3D20ACE01400BA839B /* MercurializeFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC1F20ACE01200BA839B /* MercurializeFilter.swift */; };
+		184BFC3E20ACE01400BA839B /* CRTFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2020ACE01200BA839B /* CRTFilter.swift */; };
+		184BFC3F20ACE01400BA839B /* CIKL_Sky.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2120ACE01200BA839B /* CIKL_Sky.swift */; };
+		184BFC4020ACE01400BA839B /* SimplePlasma.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2220ACE01300BA839B /* SimplePlasma.swift */; };
+		184BFC4120ACE01400BA839B /* ThirdPartyFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2320ACE01300BA839B /* ThirdPartyFilters.swift */; };
+		184BFC4220ACE01400BA839B /* LensFlare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2420ACE01300BA839B /* LensFlare.swift */; };
+		184BFC4320ACE01400BA839B /* CustomFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2520ACE01300BA839B /* CustomFilters.swift */; };
+		184BFC4420ACE01400BA839B /* RGBChannelCompositing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2620ACE01300BA839B /* RGBChannelCompositing.swift */; };
+		184BFC4520ACE01400BA839B /* CompoundEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2720ACE01300BA839B /* CompoundEye.swift */; };
+		184BFC4620ACE01400BA839B /* RefractedTextFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2820ACE01300BA839B /* RefractedTextFilter.swift */; };
+		184BFC4720ACE01400BA839B /* CausticRefraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2920ACE01300BA839B /* CausticRefraction.swift */; };
+		184BFC4820ACE01400BA839B /* Scatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2A20ACE01300BA839B /* Scatter.swift */; };
+		184BFC4920ACE01400BA839B /* VImageFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2B20ACE01300BA839B /* VImageFilters.swift */; };
+		184BFC4A20ACE01400BA839B /* CarnivalMirror.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2C20ACE01300BA839B /* CarnivalMirror.swift */; };
+		184BFC4B20ACE01400BA839B /* ModelIOGenerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2D20ACE01400BA839B /* ModelIOGenerators.swift */; };
+		184BFC4C20ACE01400BA839B /* Flame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2E20ACE01400BA839B /* Flame.swift */; };
+		184BFC4D20ACE01400BA839B /* ColorDirectedBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC2F20ACE01400BA839B /* ColorDirectedBlur.swift */; };
+		184BFC4E20ACE01400BA839B /* ConcentricSineWaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC3020ACE01400BA839B /* ConcentricSineWaves.swift */; };
+		184BFC5320ACE80600BA839B /* MetalFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC5120ACE80500BA839B /* MetalFilters.swift */; };
+		184BFC5420ACE80600BA839B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC5220ACE80500BA839B /* Shaders.metal */; };
+		184BFC5620ACE9D300BA839B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC5520ACE9D300BA839B /* Extensions.swift */; };
+		184BFC5820ACEA9300BA839B /* OverlayWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184BFC5720ACEA9300BA839B /* OverlayWidgets.swift */; };
+		184BFC5A20ACFD2100BA839B /* DitherBayer.cikernel in Resources */ = {isa = PBXBuildFile; fileRef = 184BFC5920ACFD2100BA839B /* DitherBayer.cikernel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		184B3C6E20AC8D830093350B /* Core Image Filters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Image Filters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		184B3C7120AC8D830093350B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		184B3C7320AC8D830093350B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		184B3C7520AC8D830093350B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		184B3C7820AC8D830093350B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		184B3C7A20AC8D840093350B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		184B3C7D20AC8D840093350B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		184B3C7F20AC8D840093350B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		184BFC0120ACD64700BA839B /* LabelledSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelledSlider.swift; sourceTree = "<group>"; };
+		184BFC0420ACD6BF00BA839B /* VectorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorSlider.swift; sourceTree = "<group>"; };
+		184BFC0620ACD74300BA839B /* FilterInputItemRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterInputItemRenderer.swift; sourceTree = "<group>"; };
+		184BFC0820ACD88600BA839B /* CompositeOverBlackFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeOverBlackFilter.swift; sourceTree = "<group>"; };
+		184BFC0A20ACD8B900BA839B /* HistogramDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramDisplay.swift; sourceTree = "<group>"; };
+		184BFC0C20ACD8D600BA839B /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		184BFC1320ACE01200BA839B /* Voronoi.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Voronoi.cikernel; sourceTree = "<group>"; };
+		184BFC1420ACE01200BA839B /* TransverseChromaticAberration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransverseChromaticAberration.swift; sourceTree = "<group>"; };
+		184BFC1520ACE01200BA839B /* VoronoiNoise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoronoiNoise.swift; sourceTree = "<group>"; };
+		184BFC1620ACE01200BA839B /* flame.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flame.cikernel; sourceTree = "<group>"; };
+		184BFC1720ACE01200BA839B /* CMYKRegistrationMismatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMYKRegistrationMismatch.swift; sourceTree = "<group>"; };
+		184BFC1820ACE01200BA839B /* EightBit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EightBit.swift; sourceTree = "<group>"; };
+		184BFC1920ACE01200BA839B /* FilmicEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilmicEffects.swift; sourceTree = "<group>"; };
+		184BFC1A20ACE01200BA839B /* MultiBandHSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiBandHSV.swift; sourceTree = "<group>"; };
+		184BFC1B20ACE01200BA839B /* Bokeh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bokeh.swift; sourceTree = "<group>"; };
+		184BFC1C20ACE01200BA839B /* cikl_sky.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cikl_sky.cikernel; sourceTree = "<group>"; };
+		184BFC1D20ACE01200BA839B /* SobelEdgeDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SobelEdgeDetection.swift; sourceTree = "<group>"; };
+		184BFC1E20ACE01200BA839B /* KuwaharaFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KuwaharaFilter.swift; sourceTree = "<group>"; };
+		184BFC1F20ACE01200BA839B /* MercurializeFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MercurializeFilter.swift; sourceTree = "<group>"; };
+		184BFC2020ACE01200BA839B /* CRTFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRTFilter.swift; sourceTree = "<group>"; };
+		184BFC2120ACE01200BA839B /* CIKL_Sky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIKL_Sky.swift; sourceTree = "<group>"; };
+		184BFC2220ACE01300BA839B /* SimplePlasma.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimplePlasma.swift; sourceTree = "<group>"; };
+		184BFC2320ACE01300BA839B /* ThirdPartyFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdPartyFilters.swift; sourceTree = "<group>"; };
+		184BFC2420ACE01300BA839B /* LensFlare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LensFlare.swift; sourceTree = "<group>"; };
+		184BFC2520ACE01300BA839B /* CustomFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFilters.swift; sourceTree = "<group>"; };
+		184BFC2620ACE01300BA839B /* RGBChannelCompositing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBChannelCompositing.swift; sourceTree = "<group>"; };
+		184BFC2720ACE01300BA839B /* CompoundEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundEye.swift; sourceTree = "<group>"; };
+		184BFC2820ACE01300BA839B /* RefractedTextFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefractedTextFilter.swift; sourceTree = "<group>"; };
+		184BFC2920ACE01300BA839B /* CausticRefraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CausticRefraction.swift; sourceTree = "<group>"; };
+		184BFC2A20ACE01300BA839B /* Scatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scatter.swift; sourceTree = "<group>"; };
+		184BFC2B20ACE01300BA839B /* VImageFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VImageFilters.swift; sourceTree = "<group>"; };
+		184BFC2C20ACE01300BA839B /* CarnivalMirror.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarnivalMirror.swift; sourceTree = "<group>"; };
+		184BFC2D20ACE01400BA839B /* ModelIOGenerators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelIOGenerators.swift; sourceTree = "<group>"; };
+		184BFC2E20ACE01400BA839B /* Flame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flame.swift; sourceTree = "<group>"; };
+		184BFC2F20ACE01400BA839B /* ColorDirectedBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorDirectedBlur.swift; sourceTree = "<group>"; };
+		184BFC3020ACE01400BA839B /* ConcentricSineWaves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConcentricSineWaves.swift; sourceTree = "<group>"; };
+		184BFC5120ACE80500BA839B /* MetalFilters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalFilters.swift; sourceTree = "<group>"; };
+		184BFC5220ACE80500BA839B /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		184BFC5520ACE9D300BA839B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		184BFC5720ACEA9300BA839B /* OverlayWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayWidgets.swift; sourceTree = "<group>"; };
+		184BFC5920ACFD2100BA839B /* DitherBayer.cikernel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DitherBayer.cikernel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		184B3C6B20AC8D830093350B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		184B3C6520AC8D830093350B = {
+			isa = PBXGroup;
+			children = (
+				184B3C7020AC8D830093350B /* Core Image Filters */,
+				184B3C6F20AC8D830093350B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		184B3C6F20AC8D830093350B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				184B3C6E20AC8D830093350B /* Core Image Filters.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		184B3C7020AC8D830093350B /* Core Image Filters */ = {
+			isa = PBXGroup;
+			children = (
+				184B3C7120AC8D830093350B /* AppDelegate.swift */,
+				184B3C7320AC8D830093350B /* MasterViewController.swift */,
+				184B3C7520AC8D830093350B /* DetailViewController.swift */,
+				184BFC5720ACEA9300BA839B /* OverlayWidgets.swift */,
+				184BFC1020ACD98100BA839B /* Filters */,
+				184BFC0C20ACD8D600BA839B /* Assets.swift */,
+				184BFC5520ACE9D300BA839B /* Extensions.swift */,
+				184BFC0320ACD65F00BA839B /* Components */,
+				184B3C7720AC8D830093350B /* Main.storyboard */,
+				184B3C7A20AC8D840093350B /* Assets.xcassets */,
+				184B3C7C20AC8D840093350B /* LaunchScreen.storyboard */,
+				184B3C7F20AC8D840093350B /* Info.plist */,
+			);
+			path = "Core Image Filters";
+			sourceTree = "<group>";
+		};
+		184BFC0320ACD65F00BA839B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				184BFC0120ACD64700BA839B /* LabelledSlider.swift */,
+				184BFC0420ACD6BF00BA839B /* VectorSlider.swift */,
+				184BFC0620ACD74300BA839B /* FilterInputItemRenderer.swift */,
+				184BFC0820ACD88600BA839B /* CompositeOverBlackFilter.swift */,
+				184BFC0A20ACD8B900BA839B /* HistogramDisplay.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		184BFC1020ACD98100BA839B /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				184BFC1B20ACE01200BA839B /* Bokeh.swift */,
+				184BFC2C20ACE01300BA839B /* CarnivalMirror.swift */,
+				184BFC2920ACE01300BA839B /* CausticRefraction.swift */,
+				184BFC2120ACE01200BA839B /* CIKL_Sky.swift */,
+				184BFC1720ACE01200BA839B /* CMYKRegistrationMismatch.swift */,
+				184BFC2F20ACE01400BA839B /* ColorDirectedBlur.swift */,
+				184BFC2720ACE01300BA839B /* CompoundEye.swift */,
+				184BFC3020ACE01400BA839B /* ConcentricSineWaves.swift */,
+				184BFC2020ACE01200BA839B /* CRTFilter.swift */,
+				184BFC2520ACE01300BA839B /* CustomFilters.swift */,
+				184BFC1820ACE01200BA839B /* EightBit.swift */,
+				184BFC1920ACE01200BA839B /* FilmicEffects.swift */,
+				184BFC2E20ACE01400BA839B /* Flame.swift */,
+				184BFC1E20ACE01200BA839B /* KuwaharaFilter.swift */,
+				184BFC2420ACE01300BA839B /* LensFlare.swift */,
+				184BFC1F20ACE01200BA839B /* MercurializeFilter.swift */,
+				184BFC2D20ACE01400BA839B /* ModelIOGenerators.swift */,
+				184BFC1A20ACE01200BA839B /* MultiBandHSV.swift */,
+				184BFC2820ACE01300BA839B /* RefractedTextFilter.swift */,
+				184BFC2620ACE01300BA839B /* RGBChannelCompositing.swift */,
+				184BFC2A20ACE01300BA839B /* Scatter.swift */,
+				184BFC2220ACE01300BA839B /* SimplePlasma.swift */,
+				184BFC1D20ACE01200BA839B /* SobelEdgeDetection.swift */,
+				184BFC2320ACE01300BA839B /* ThirdPartyFilters.swift */,
+				184BFC1420ACE01200BA839B /* TransverseChromaticAberration.swift */,
+				184BFC2B20ACE01300BA839B /* VImageFilters.swift */,
+				184BFC1520ACE01200BA839B /* VoronoiNoise.swift */,
+				184BFC5020ACE80500BA839B /* metalFilters */,
+				184BFC4F20ACE7BF00BA839B /* cikernel */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		184BFC4F20ACE7BF00BA839B /* cikernel */ = {
+			isa = PBXGroup;
+			children = (
+				184BFC5920ACFD2100BA839B /* DitherBayer.cikernel */,
+				184BFC1C20ACE01200BA839B /* cikl_sky.cikernel */,
+				184BFC1620ACE01200BA839B /* flame.cikernel */,
+				184BFC1320ACE01200BA839B /* Voronoi.cikernel */,
+			);
+			path = cikernel;
+			sourceTree = "<group>";
+		};
+		184BFC5020ACE80500BA839B /* metalFilters */ = {
+			isa = PBXGroup;
+			children = (
+				184BFC5120ACE80500BA839B /* MetalFilters.swift */,
+				184BFC5220ACE80500BA839B /* Shaders.metal */,
+			);
+			path = metalFilters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		184B3C6D20AC8D830093350B /* Core Image Filters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184B3C8220AC8D840093350B /* Build configuration list for PBXNativeTarget "Core Image Filters" */;
+			buildPhases = (
+				184B3C6A20AC8D830093350B /* Sources */,
+				184B3C6B20AC8D830093350B /* Frameworks */,
+				184B3C6C20AC8D830093350B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Core Image Filters";
+			productName = "Core Image Filters";
+			productReference = 184B3C6E20AC8D830093350B /* Core Image Filters.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		184B3C6620AC8D830093350B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Eugene Bokhan";
+				TargetAttributes = {
+					184B3C6D20AC8D830093350B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 184B3C6920AC8D830093350B /* Build configuration list for PBXProject "Core Image Filters" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 184B3C6520AC8D830093350B;
+			productRefGroup = 184B3C6F20AC8D830093350B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				184B3C6D20AC8D830093350B /* Core Image Filters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		184B3C6C20AC8D830093350B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184B3C7E20AC8D840093350B /* LaunchScreen.storyboard in Resources */,
+				184BFC5A20ACFD2100BA839B /* DitherBayer.cikernel in Resources */,
+				184BFC3A20ACE01400BA839B /* cikl_sky.cikernel in Resources */,
+				184B3C7B20AC8D840093350B /* Assets.xcassets in Resources */,
+				184BFC3420ACE01400BA839B /* flame.cikernel in Resources */,
+				184B3C7920AC8D830093350B /* Main.storyboard in Resources */,
+				184BFC3120ACE01400BA839B /* Voronoi.cikernel in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		184B3C6A20AC8D830093350B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				184BFC5420ACE80600BA839B /* Shaders.metal in Sources */,
+				184BFC4920ACE01400BA839B /* VImageFilters.swift in Sources */,
+				184BFC0720ACD74300BA839B /* FilterInputItemRenderer.swift in Sources */,
+				184BFC0520ACD6BF00BA839B /* VectorSlider.swift in Sources */,
+				184BFC4C20ACE01400BA839B /* Flame.swift in Sources */,
+				184BFC4720ACE01400BA839B /* CausticRefraction.swift in Sources */,
+				184BFC3720ACE01400BA839B /* FilmicEffects.swift in Sources */,
+				184B3C7620AC8D830093350B /* DetailViewController.swift in Sources */,
+				184BFC4620ACE01400BA839B /* RefractedTextFilter.swift in Sources */,
+				184BFC3F20ACE01400BA839B /* CIKL_Sky.swift in Sources */,
+				184BFC4120ACE01400BA839B /* ThirdPartyFilters.swift in Sources */,
+				184BFC5320ACE80600BA839B /* MetalFilters.swift in Sources */,
+				184BFC3C20ACE01400BA839B /* KuwaharaFilter.swift in Sources */,
+				184BFC4520ACE01400BA839B /* CompoundEye.swift in Sources */,
+				184BFC3620ACE01400BA839B /* EightBit.swift in Sources */,
+				184B3C7420AC8D830093350B /* MasterViewController.swift in Sources */,
+				184B3C7220AC8D830093350B /* AppDelegate.swift in Sources */,
+				184BFC4D20ACE01400BA839B /* ColorDirectedBlur.swift in Sources */,
+				184BFC0B20ACD8B900BA839B /* HistogramDisplay.swift in Sources */,
+				184BFC3920ACE01400BA839B /* Bokeh.swift in Sources */,
+				184BFC3320ACE01400BA839B /* VoronoiNoise.swift in Sources */,
+				184BFC4020ACE01400BA839B /* SimplePlasma.swift in Sources */,
+				184BFC3D20ACE01400BA839B /* MercurializeFilter.swift in Sources */,
+				184BFC4220ACE01400BA839B /* LensFlare.swift in Sources */,
+				184BFC0220ACD64700BA839B /* LabelledSlider.swift in Sources */,
+				184BFC4320ACE01400BA839B /* CustomFilters.swift in Sources */,
+				184BFC3820ACE01400BA839B /* MultiBandHSV.swift in Sources */,
+				184BFC3220ACE01400BA839B /* TransverseChromaticAberration.swift in Sources */,
+				184BFC4E20ACE01400BA839B /* ConcentricSineWaves.swift in Sources */,
+				184BFC0920ACD88600BA839B /* CompositeOverBlackFilter.swift in Sources */,
+				184BFC3520ACE01400BA839B /* CMYKRegistrationMismatch.swift in Sources */,
+				184BFC3E20ACE01400BA839B /* CRTFilter.swift in Sources */,
+				184BFC5820ACEA9300BA839B /* OverlayWidgets.swift in Sources */,
+				184BFC0D20ACD8D600BA839B /* Assets.swift in Sources */,
+				184BFC4B20ACE01400BA839B /* ModelIOGenerators.swift in Sources */,
+				184BFC5620ACE9D300BA839B /* Extensions.swift in Sources */,
+				184BFC4A20ACE01400BA839B /* CarnivalMirror.swift in Sources */,
+				184BFC4420ACE01400BA839B /* RGBChannelCompositing.swift in Sources */,
+				184BFC4820ACE01400BA839B /* Scatter.swift in Sources */,
+				184BFC3B20ACE01400BA839B /* SobelEdgeDetection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		184B3C7720AC8D830093350B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B3C7820AC8D830093350B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		184B3C7C20AC8D840093350B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				184B3C7D20AC8D840093350B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		184B3C8020AC8D840093350B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		184B3C8120AC8D840093350B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		184B3C8320AC8D840093350B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = "Core Image Filters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.Core-Image-Filters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		184B3C8420AC8D840093350B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = "Core Image Filters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.eugenebokhan.Core-Image-Filters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184B3C6920AC8D830093350B /* Build configuration list for PBXProject "Core Image Filters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B3C8020AC8D840093350B /* Debug */,
+				184B3C8120AC8D840093350B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		184B3C8220AC8D840093350B /* Build configuration list for PBXNativeTarget "Core Image Filters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				184B3C8320AC8D840093350B /* Debug */,
+				184B3C8420AC8D840093350B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 184B3C6620AC8D830093350B /* Project object */;
+}
